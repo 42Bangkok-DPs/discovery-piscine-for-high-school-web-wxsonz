@@ -14,9 +14,9 @@ for i in $(seq -w 0 $1); do
         continue
     fi
     if [ "$i" -ge 10 ]; then
-        mkdir ex0$i
-    else
         mkdir ex$i
+    else
+        mkdir ex0$i
     fi
 done
 

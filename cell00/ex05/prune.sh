@@ -6,9 +6,9 @@ i=0
 for i in $(seq -w 0 $1); do
     if [ "$i" -ge 10 ]; then
         echo "rm -rdf ex0$i"
-        rm -rdf ex0$i
+        rm -rdf ex$i
     else
         echo "rm -rdf ex$i"
-        rm -rdf ex$i
+        rm -rdf ex0$i
     fi
 done
